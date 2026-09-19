@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PlacementPro | My Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="app-body" data-role="student">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="app-main">
+        <header class="topbar">
+            <div><span class="eyebrow">STUDENT PORTAL / TASKS</span>
+                <h1>My Tasks</h1>
+            </div>
+            <div class="user-mini"><span>K</span>
+                <div><b>Kavi</b><small>III CSE</small></div>
+            </div>
+        </header>
+        <section class="filter-row"><button class="filter active" onclick="filterTasks('all',this)">All</button><button
+                class="filter" onclick="filterTasks('pending',this)">Pending</button><button class="filter"
+                onclick="filterTasks('completed',this)">Completed</button><button class="filter"
+                onclick="filterTasks('upcoming',this)">Upcoming</button></section>
+        <section class="panel">
+            <div class="panel-head">
+                <div><span>ASSIGNED BY CDC</span>
+                    <h2>Task List</h2>
+                </div>
+            </div>
+            <div id="allTasks" class="task-list"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

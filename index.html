@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlacementPro | Career Preparation Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing">
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">P</span>
+      <span><strong>PlacementPro</strong><small>Career Preparation Portal</small></span>
+    </a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="btn btn-primary" onclick="openRoleModal()">Login</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">● Smart Placement Management</span>
+        <h1>Prepare Better.<br><em>Perform Better.</em><br>Get Placement Ready.</h1>
+        <p>PlacementPro connects students and the Career Development Centre through structured tasks, timed assessments, placement events and performance tracking.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="openLogin('student')">Student Login →</button>
+          <button class="btn btn-outline" onclick="openLogin('cdc')">CDC Login</button>
+        </div>
+      </div>
+
+      <div class="preview-card">
+        <div class="preview-head">
+          <div><small>Student Dashboard</small><h3>Your Placement Progress</h3></div>
+          <span class="avatar">K</span>
+        </div>
+        <div class="mini-stats">
+          <div><b>12</b><span>Assigned</span></div>
+          <div><b>8</b><span>Completed</span></div>
+          <div><b>3</b><span>Pending</span></div>
+        </div>
+        <div class="readiness-mini"><div><span>Placement Readiness</span><b>82%</b></div><i><u></u></i></div>
+        <div class="mini-task"><span class="task-icon">📝</span><div><b>Aptitude Assessment</b><small>Deadline: Today, 6:00 PM</small></div><mark>Pending</mark></div>
+        <div class="mini-task"><span class="task-icon blue">C</span><div><b>Coding Challenge</b><small>Deadline: Tomorrow</small></div><mark class="done">Done</mark></div>
+      </div>
+    </section>
+
+    <section class="home-stats">
+      <div><b>1000+</b><span>Students</span></div>
+      <div><b>50+</b><span>Tasks</span></div>
+      <div><b>100+</b><span>Placement Events</span></div>
+      <div><b>25+</b><span>Company Drives</span></div>
+    </section>
+
+    <section id="features" class="home-section">
+      <div class="section-title"><span>FEATURES</span><h2>Everything needed for placement preparation</h2><p>A single frontend portal connecting students with CDC activities.</p></div>
+      <div class="feature-grid">
+        <article><div class="feature-icon">📝</div><h3>Task Assignment</h3><p>CDC can assign aptitude, coding, technical and interview preparation tasks.</p></article>
+        <article><div class="feature-icon">⏱</div><h3>Deadline Tracking</h3><p>Students can see deadlines, pending work and completed activities.</p></article>
+        <article><div class="feature-icon">📊</div><h3>Performance</h3><p>Track scores and placement readiness through simple dashboards.</p></article>
+        <article><div class="feature-icon">📅</div><h3>Placement Events</h3><p>Display assessments, mock interviews and company drives.</p></article>
+        <article><div class="feature-icon">👨‍🎓</div><h3>Year-wise Management</h3><p>CDC can work with II, III and IV year students.</p></article>
+        <article><div class="feature-icon">🏢</div><h3>Company Drives</h3><p>Students can view upcoming placement opportunities and eligibility.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+    <div class="about-box">
+
+        <span>ABOUT PLACEMENTPRO</span>
+
+        <h2>
+            One platform for <em>placement preparation</em>
+        </h2>
+
+        <p>
+            PlacementPro provides a centralized platform where students can
+            prepare for placement activities while the Career Development
+            Centre can manage tasks, assessments, events and student
+            performance.
+        </p>
+
+        <div class="checks">
+            <span>✓ Year-wise student management</span>
+            <span>✓ Department-wise task assignment</span>
+            <span>✓ Timed assessments</span>
+            <span>✓ Performance tracking</span>
+        </div>
+
+    </div>
+</section>
+
+  <footer><b> Placement & Career Management Portal</b><span>Career Preparation Portal </span></footer>
+
+  <div id="roleModal" class="modal">
+    <div class="modal-card role-card">
+      <button class="close" onclick="closeModals()">×</button>
+      <div class="modal-icon">P</div><h2>Choose your portal</h2><p>Select how you want to enter PlacementPro.</p>
+      <button class="role-choice" onclick="openLogin('student')"><span>👨‍🎓</span><div><b>Student Portal</b><small>View tasks, events and performance</small></div><strong>→</strong></button>
+      <button class="role-choice" onclick="openLogin('cdc')"><span>🏢</span><div><b>CDC Portal</b><small>Manage students, tasks and placement activities</small></div><strong>→</strong></button>
+    </div>
+  </div>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-card">
+      <button class="close" onclick="closeModals()">×</button>
+      <div class="modal-icon" id="loginIcon">P</div>
+      <h2 id="loginTitle">Student Login</h2>
+      <p id="loginSub">Enter your credentials to continue.</p>
+      <form onsubmit="handleLogin(event)">
+        <label>Email</label><input id="loginEmail" type="email" required>
+        <label>Password</label><input id="loginPassword" type="password" required>
+        <p id="loginError" class="form-error"></p>
+        <button class="btn btn-primary full" type="submit">Login →</button>
+      </form>
+      <div class="demo-box"><b>Demo credentials</b><br><span id="demoText">student@placementpro.com / student123</span></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

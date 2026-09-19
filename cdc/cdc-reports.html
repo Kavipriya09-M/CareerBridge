@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PlacementPro | Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="app-body" data-role="cdc">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="app-main">
+        <header class="topbar">
+            <div><span class="eyebrow">CDC PORTAL / REPORTS</span>
+                <h1>Reports</h1>
+            </div>
+            <div class="user-mini"><span class="cdc-avatar">C</span>
+                <div><b>CDC Admin</b><small>Placement Cell</small></div>
+            </div>
+        </header>
+        <div class="report-grid">
+            <article class="report-card"><span>📊</span>
+                <h2>Task Completion Report</h2>
+                <p>Completion percentage by year, department and task.</p><button class="btn btn-primary"
+                    onclick="demoAction('Task Completion Report')">Generate</button>
+            </article>
+            <article class="report-card"><span>🎯</span>
+                <h2>Readiness Report</h2>
+                <p>Placement readiness across II, III and IV year.</p><button class="btn btn-primary"
+                    onclick="demoAction('Readiness Report')">Generate</button>
+            </article>
+            <article class="report-card"><span>🏢</span>
+                <h2>Drive Report</h2>
+                <p>Company drives, registrations and selection statistics.</p><button class="btn btn-primary"
+                    onclick="demoAction('Drive Report')">Generate</button>
+            </article>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

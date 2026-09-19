@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PlacementPro | CDC Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="app-body" data-role="cdc">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="app-main">
+        <header class="topbar">
+            <div><span class="eyebrow">CAREER DEVELOPMENT CENTRE</span>
+                <h1>Welcome back, CDC 👋</h1>
+            </div>
+            <div class="top-actions"><button class="icon-btn">🔔<i>5</i></button>
+                <div class="user-mini"><span class="cdc-avatar">C</span>
+                    <div><b>CDC Admin</b><small>Placement Cell</small></div>
+                </div>
+            </div>
+        </header>
+        <section class="stat-grid">
+            <div class="stat-card"><span class="stat-icon green">👨‍🎓</span>
+                <div><small>Total Students</small><b>1250</b></div>
+            </div>
+            <div class="stat-card"><span class="stat-icon blue">📝</span>
+                <div><small>Active Tasks</small><b>24</b></div>
+            </div>
+            <div class="stat-card"><span class="stat-icon orange">📥</span>
+                <div><small>Pending Submissions</small><b>156</b></div>
+            </div>
+            <div class="stat-card"><span class="stat-icon purple">🏢</span>
+                <div><small>Placement Drives</small><b>18</b></div>
+            </div>
+        </section>
+        <section class="panel">
+            <div class="panel-head">
+                <div><span>STUDENT MANAGEMENT</span>
+                    <h2>Year-wise Students</h2>
+                </div><a href="cdc-students.html">View All Students →</a>
+            </div>
+            <div class="year-grid"><a class="year-card" href="cdc-students.html?year=II"><strong>II</strong>
+                    <div><b>II Year</b><small>425 Students</small></div><span>→</span>
+                </a><a class="year-card selected" href="cdc-students.html?year=III"><strong>III</strong>
+                    <div><b>III Year</b><small>415 Students</small></div><span>→</span>
+                </a><a class="year-card" href="cdc-students.html?year=IV"><strong>IV</strong>
+                    <div><b>IV Year</b><small>410 Students</small></div><span>→</span>
+                </a></div>
+        </section>
+        <section class="two-col">
+            <div class="panel">
+                <div class="panel-head">
+                    <div><span>QUICK ACTION</span>
+                        <h2>Create New Task</h2>
+                    </div>
+                </div>
+                <form id="taskForm" class="task-form" onsubmit="createTask(event)">
+                    <label>Task Title</label><input name="title" placeholder="Eg: Aptitude Assessment - Level 1"
+                        required>
+                    <div class="form-row">
+                        <div><label>Task Type</label><select name="type">
+                                <option>Aptitude Test</option>
+                                <option>Coding Challenge</option>
+                                <option>Technical Quiz</option>
+                                <option>Verbal Test</option>
+                                <option>Mock Interview</option>
+                            </select></div>
+                        <div><label>Target Year</label><select name="year">
+                                <option>II Year</option>
+                                <option selected>III Year</option>
+                                <option>IV Year</option>
+                            </select></div>
+                    </div>
+                    <div class="form-row">
+                        <div><label>Department</label><select name="department">
+                                <option>All Departments</option>
+                                <option>CSE</option>
+                                <option>IT</option>
+                                <option>AIML</option>
+                                <option>ECE</option>
+                            </select></div>
+                        <div><label>Section</label><select name="section">
+                                <option>All Sections</option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                            </select></div>
+                    </div>
+                    <div class="form-row">
+                        <div><label>Deadline</label><input name="deadline" type="date" required></div>
+                        <div><label>Duration</label><select name="duration">
+                                <option>20 Minutes</option>
+                                <option>30 Minutes</option>
+                                <option>60 Minutes</option>
+                                <option>90 Minutes</option>
+                            </select></div>
+                    </div>
+                    <button class="btn btn-primary full" type="submit">+ Assign Task</button>
+                </form>
+            </div>
+            <div class="panel">
+                <div class="panel-head">
+                    <div><span>PLACEMENT ACTIVITIES</span>
+                        <h2>Upcoming Events</h2>
+                    </div>
+                </div>
+                <div id="cdcUpcomingEvents" class="event-list"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

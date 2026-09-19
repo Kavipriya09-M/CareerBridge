@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PlacementPro | Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="app-body" data-role="cdc">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="app-main">
+        <header class="topbar">
+            <div><span class="eyebrow">CDC PORTAL / STUDENTS</span>
+                <h1>Student Management</h1>
+            </div>
+            <div class="user-mini"><span class="cdc-avatar">C</span>
+                <div><b>CDC Admin</b><small>Placement Cell</small></div>
+            </div>
+        </header>
+        <section class="filter-row"><button class="filter active">All Years</button><button class="filter">II
+                Year</button><button class="filter">III Year</button><button class="filter">IV Year</button><select
+                class="search-select">
+                <option>All Departments</option>
+                <option>CSE</option>
+                <option>IT</option>
+                <option>AIML</option>
+            </select></section>
+        <section class="panel">
+            <div class="panel-head">
+                <div><span>STUDENT DIRECTORY</span>
+                    <h2>Students</h2>
+                </div><button class="btn btn-primary" onclick="demoAction('Add student')">+ Add Student</button>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Year</th>
+                            <th>Department</th>
+                            <th>Section</th>
+                            <th>CGPA</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Kavipriya M</b></td>
+                            <td>III</td>
+                            <td>CSE</td>
+                            <td>B</td>
+                            <td>8.7</td>
+                            <td><mark class="pill done">Active</mark></td>
+                        </tr>
+                        <tr>
+                            <td><b>Student 02</b></td>
+                            <td>III</td>
+                            <td>CSE</td>
+                            <td>A</td>
+                            <td>8.4</td>
+                            <td><mark class="pill done">Active</mark></td>
+                        </tr>
+                        <tr>
+                            <td><b>Student 03</b></td>
+                            <td>IV</td>
+                            <td>IT</td>
+                            <td>A</td>
+                            <td>9.1</td>
+                            <td><mark class="pill done">Active</mark></td>
+                        </tr>
+                        <tr>
+                            <td><b>Student 04</b></td>
+                            <td>II</td>
+                            <td>AIML</td>
+                            <td>C</td>
+                            <td>8.2</td>
+                            <td><mark class="pill done">Active</mark></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PlacementPro | Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="app-body" data-role="student">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="app-main">
+        <header class="topbar">
+            <div><span class="eyebrow">STUDENT DASHBOARD</span>
+                <h1>Welcome back, Kavi 👋</h1>
+            </div>
+            <div class="top-actions"><button class="icon-btn">🔔<i>3</i></button>
+                <div class="user-mini"><span>K</span>
+                    <div><b>Kavi</b><small>III CSE</small></div>
+                </div>
+            </div>
+        </header>
+        <section class="stat-grid">
+            <div class="stat-card"><span class="stat-icon green">📝</span>
+                <div><small>Assigned Tasks</small><b>12</b></div>
+            </div>
+            <div class="stat-card"><span class="stat-icon blue">✓</span>
+                <div><small>Completed</small><b>8</b></div>
+            </div>
+            <div class="stat-card"><span class="stat-icon orange">⏳</span>
+                <div><small>Pending</small><b>3</b></div>
+            </div>
+            <div class="stat-card"><span class="stat-icon purple">🎯</span>
+                <div><small>Readiness</small><b>82%</b></div>
+            </div>
+        </section>
+        <section class="two-col">
+            <div class="panel">
+                <div class="panel-head">
+                    <div><span>CDC ASSIGNED TASKS</span>
+                        <h2>My Tasks</h2>
+                    </div><a href="student-tasks.html">View All →</a>
+                </div>
+                <div id="dashboardTasks"></div>
+            </div>
+            <div class="panel">
+                <div class="panel-head">
+                    <div><span>YOUR PROGRESS</span>
+                        <h2>Placement Readiness</h2>
+                    </div>
+                </div>
+                <div class="circle-progress"><strong>82%</strong><small>Ready</small></div>
+                <div class="progress-line"><span>Aptitude <b>88%</b></span><i><u style="width:88%"></u></i></div>
+                <div class="progress-line"><span>Coding <b>76%</b></span><i><u style="width:76%"></u></i></div>
+                <div class="progress-line"><span>Technical <b>91%</b></span><i><u style="width:91%"></u></i></div>
+                <div class="progress-line"><span>Verbal <b>82%</b></span><i><u style="width:82%"></u></i></div>
+            </div>
+        </section>
+        <section class="panel">
+            <div class="panel-head">
+                <div><span>PLACEMENT ACTIVITIES</span>
+                    <h2>Upcoming Events</h2>
+                </div><a href="student-events.html">View All →</a>
+            </div>
+            <div id="dashboardEvents" class="event-list"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
