@@ -1,68 +1,129 @@
-PLACEMENTPRO - FRONTEND REVIEW 1
+CAREERBRIDGE
+
 =================================
 
-This is a frontend-only prototype for the Web Design / Web Technology project.
+CareerBridge is a Smart Placement & Career Management Portal for students and the Career Development Centre (CDC).
 
 FILES
------
-index.html                 Landing page + login
-student.html               Student dashboard
-student-tasks.html         Student tasks
-student-events.html        Placement events
-student-practice.html      Aptitude/coding/technical/interview practice
-student-performance.html   Student performance
-student-drives.html        Company drives
-student-profile.html       Student profile
-student-notifications.html Student notifications
+CareerBridge/
+│
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+│
+├── student/
+│   ├── student.html
+│   ├── student-tasks.html
+│   ├── student-events.html
+│   ├── student-practice.html
+│   ├── student-performance.html
+│   ├── student-drives.html
+│   ├── student-profile.html
+│   └── student-notifications.html
+│
+└── cdc/
+    ├── cdc.html
+    ├── cdc-students.html
+    ├── cdc-tasks.html
+    ├── cdc-events.html
+    ├── cdc-drives.html
+    ├── cdc-submissions.html
+    ├── cdc-performance.html
+    ├── cdc-reports.html
+    └── cdc-notifications.html
+MAIN FILES
 
-cdc.html                   CDC dashboard + create task
-cdc-students.html          Student management
-cdc-tasks.html             Task management
-cdc-events.html            Placement events
-cdc-drives.html            Company drives
-cdc-submissions.html       Student submissions
-cdc-performance.html       Performance analytics
-cdc-reports.html           Reports
-cdc-notifications.html     CDC notifications
+index.html
+Landing page with Student and CDC login.
 
-style.css                  Complete green theme
-script.js                  Navigation, demo login, task storage and interactions
+style.css
+Contains the complete design, layout, colors, cards, tables and responsive styling.
 
+script.js
+Handles navigation, login, tasks, events, notifications and other interactions.
+
+STUDENT FEATURES
+Student Dashboard
+View Assigned Tasks
+Placement Events
+Aptitude Practice
+Coding Practice
+Performance Tracking
+Company Drives
+Student Profile
+Notifications
+CDC FEATURES
+CDC Dashboard
+Student Management
+Task Creation and Assignment
+Placement Events
+Company Drives
+Student Submissions
+Performance Tracking
+Reports
+Notifications
 DEMO LOGIN
-----------
-Student:
+Student
 Email: student@placementpro.com
 Password: student123
-
-CDC:
+CDC
 Email: cdc@placementpro.com
 Password: cdc123
-
+TECHNOLOGIES USED
+HTML5
+CSS3
+JavaScript
+Local Storage
+IMPLEMENTATION PLAN
+1. Project Setup
+Create the CareerBridge project.
+Create Student and CDC sections.
+Create common HTML, CSS and JavaScript files.
+2. Student Section
+Create student dashboard.
+Add tasks and deadlines.
+Add placement events.
+Add practice activities.
+Add performance details.
+Add company drives.
+Add profile and notifications.
+3. CDC Section
+Create CDC dashboard.
+Manage students.
+Create and assign tasks.
+Manage events and company drives.
+Check submissions.
+Track performance.
+Generate reports.
+Manage notifications.
+4. JavaScript
+Implement login.
+Add page navigation.
+Add task filtering.
+Add interactive features.
+Use Local Storage for task data.
+Add logout.
+5. Testing
+Test Student and CDC login.
+Test all page navigation.
+Test tasks and events.
+Test company drives.
+Test responsive design.
+Check all file paths.
 HOW TO RUN
-----------
-1. Extract the ZIP.
-2. Keep all files in the same folder.
-3. Open index.html in a browser.
-4. Click Student Login or CDC Login.
-5. Use the demo credentials above.
+Open the CareerBridge folder in VS Code.
+Open index.html.
+Run it in a browser.
+Select Student Login or CDC Login.
+Enter the demo login details.
+Explore the available features.
+FUTURE DEVELOPMENT
 
-REVIEW 1 SCOPE
---------------
-HTML + CSS + JavaScript only.
-No server/database is used.
+The system can later be connected to:
 
-REVIEW 2 SUGGESTION
--------------------
-Connect the same UI to:
-Frontend -> Node.js + Express -> MongoDB
-
-Then implement:
-- real authentication
-- CDC task assignment
-- year/department/section targeting
-- student task retrieval
-- deadline validation
-- submissions
-- performance records
-- company drives
-- notifications
+Node.js
+Express.js
+MongoDB
+REST API
+Authentication 
